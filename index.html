@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Berita Unpam</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffe6f0;
+      color: #333;
+      line-height: 1.6;
+      padding: 0 15px;
+    }
+
+    header {
+      background-color: #ffb6c1;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    main {
+      margin: 30px auto;
+      max-width: 900px;
+    }
+
+    .berita-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .berita {
+      background-color: #fff0f5;
+      padding: 20px;
+      border-left: 6px solid #ff69b4;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(255, 105, 180, 0.2);
+    }
+
+    .berita h2 {
+      margin-bottom: 5px;
+      color: #d63384;
+    }
+
+    .berita time {
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    .berita p {
+      margin: 10px 0;
+    }
+
+    .berita button {
+      background-color: #ff69b4;
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .berita button:hover {
+      background-color: #ff1493;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffc0cb;
+      margin-top: 40px;
+      color: #fc00ef;
+    }
+
+    /* Responsif */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .berita-container {
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Berita Unpam</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Berita</a></li>
+        <li><a href="#">Tentang</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="berita-container">
+
+      <article class="berita">
+        <h2>Magang Berdampak</h2>
+        <time datetime="2025-07-01">1 Juli 2025</time>
+        <p>Universitas mengajak mahasiswa untuk mencari peluang dan ilmu diluar dari lingkungan kampus...</p>
+        <button onclick="bacaSelengkapnya('Magang ini bertujuan untuk mahasiswa untuk mempunyai pengalaman dan membuat mahasiswa lebih mengasah hard skill mereka.')">Baca Selengkapnya</button>
+      </article>
+
+      <article class="berita">
+        <h2>Lomba SIFEST</h2>
+        <time datetime="2025-06-28">28 Juni 2025</time>
+        <p>Lomba ini di adakan untuk seluruh mahasiswa jurusan sistem informasi dari semester 1 hingga semester 8</p>
+        <button onclick="bacaSelengkapnya('Lomba ini bertujuan untuk mencari bakat dari tiap mahasiswa dan memperkuat pertemanan antar semester mahasiwa prodi sistem informasi.')">Baca Selengkapnya</button>
+      </article>
+
+      <article class="berita">
+        <h2>Pkm Mahasiswa Universitas Pamulang</h2>
+        <time datetime="2025-06-25">25 Juni 2025</time>
+        <p>Mahasiswa dari berbagai jurusan melakukan pengabdian kepada masyarakat ke sekolah ataupun ke lingkungan masyarakat</p>
+        <button onclick="bacaSelengkapnya('Pengabdian Masyarakat adalah suatu kegiatan yang bertujuan untuk membantu masyarakat dalam beberapa aktivitas tanpa mengharapkan imbalan dalam bentuk apapun.')">Baca Selengkapnya</button>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <h2>Nenden Rosmeylani - 221091750100</h2>
+
+  <script>
+    function bacaSelengkapnya(isi) {
+      alert(isi);
+    }
+  </script>
+
+</body>
+</html>
